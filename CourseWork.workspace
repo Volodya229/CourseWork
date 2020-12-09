@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Workspace Name="CourseWork" Database="" Version="10.0.0">
+  <Project Name="http_client" Path="http_client/http_client.project" Active="Yes"/>
+  <Project Name="UnitTest" Path="UnitTest/UnitTest.project" Active="No"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Debug" Selected="no">
+      <Environment/>
+      <Project Name="http_client" ConfigName="Debug"/>
+      <Project Name="UnitTest" ConfigName="Debug"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Environment/>
+      <Project Name="http_client" ConfigName="Release"/>
+      <Project Name="UnitTest" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+</CodeLite_Workspace>

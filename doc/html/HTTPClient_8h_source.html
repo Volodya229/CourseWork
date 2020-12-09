@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>HTTP Client: Исходный файл http_client/HTTPClient.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">HTTP Client
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_f25e0af097aceedde9a4d76143cf874a.html">http_client</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">HTTPClient.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="HTTPClient_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;exception&gt;</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;Winsock2.h&gt;</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">using namespace </span>std;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classHTTPClient.html">   23</a></span>&#160;<span class="keyword">class </span><a class="code" href="classHTTPClient.html">HTTPClient</a></div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classHTTPClient.html#a2b2a7590ad11d8dc6c85f22cbf376a47">   26</a></span>&#160;    <span class="keywordtype">char</span> recv_buf[1024*1024]; </div><div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classHTTPClient.html#a77963622298cf79d9939265d6382945b">   27</a></span>&#160;    <span class="keywordtype">int</span>  <a class="code" href="classHTTPClient.html#a77963622298cf79d9939265d6382945b">recv_count</a>; </div><div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classHTTPClient.html#a9a8a44183458313bc880b67e3fa96bad">   28</a></span>&#160;    <span class="keywordtype">string</span> <a class="code" href="classHTTPClient.html#a9a8a44183458313bc880b67e3fa96bad">server</a>; </div><div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classHTTPClient.html#a347f62a6a3a8d561838b7f578ace45a5">   29</a></span>&#160;    <span class="keywordtype">string</span> <a class="code" href="classHTTPClient.html#a347f62a6a3a8d561838b7f578ace45a5">path</a>; </div><div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classHTTPClient.html#a573fb05f32d90d0ac0a7bac352ecae92">   30</a></span>&#160;    <span class="keywordtype">string</span> <a class="code" href="classHTTPClient.html#a573fb05f32d90d0ac0a7bac352ecae92">file_path</a>; </div><div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classHTTPClient.html#a151a9a4e480fee2f964626721b9b819a">   31</a></span>&#160;    SOCKET <a class="code" href="classHTTPClient.html#a151a9a4e480fee2f964626721b9b819a">client_sock</a>; </div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">void</span> connect();</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> save_to_file();</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="classHTTPClient.html">HTTPClient</a>();</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">string</span> get_server() { <span class="keywordflow">return</span> server; } </div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">string</span> get_path() { <span class="keywordflow">return</span> path; }</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">void</span> set_server(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; s) { server = s; }</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">void</span> set_path(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; p) { path = p; }</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">void</span> set_url(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; url);</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">void</span> set_file(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; f_path);</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> parse_headers(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; head_buf_str, <span class="keywordtype">int</span> &amp;http_code, <span class="keywordtype">string</span> &amp;loc);</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">int</span> request();</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    ~<a class="code" href="classHTTPClient.html">HTTPClient</a>();</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;};</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div><div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="classError.html">   85</a></span>&#160;<span class="keyword">class </span><a class="code" href="classError.html">Error</a> : <span class="keyword">public</span> exception</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;{</div><div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="classError.html#aa6c7eb4e44e5965476c534c1b3fa1d0e">   87</a></span>&#160;    <span class="keywordtype">string</span> <a class="code" href="classError.html#aa6c7eb4e44e5965476c534c1b3fa1d0e">what_str</a>; </div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="classError.html#a66e4b23485049435a2d454f80083f38c">   93</a></span>&#160;    <a class="code" href="classError.html#a66e4b23485049435a2d454f80083f38c">Error</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; what_arg) : what_str(what_arg) {}</div><div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="classError.html#a57dd37fd445e3182ed9da6ebfd2a28c0">   98</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="classError.html#a57dd37fd445e3182ed9da6ebfd2a28c0">what</a>() { <span class="keywordflow">return</span> what_str.c_str(); }</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    ~<a class="code" href="classError.html">Error</a>() throw() {}</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;};</div><div class="ttc" id="classHTTPClient_html_a573fb05f32d90d0ac0a7bac352ecae92"><div class="ttname"><a href="classHTTPClient.html#a573fb05f32d90d0ac0a7bac352ecae92">HTTPClient::file_path</a></div><div class="ttdeci">string file_path</div><div class="ttdoc">Путь по которому будет сохранён файл</div><div class="ttdef"><b>Definition:</b> HTTPClient.h:30</div></div>
+<div class="ttc" id="classError_html"><div class="ttname"><a href="classError.html">Error</a></div><div class="ttdoc">Класс для обработки ошибок</div><div class="ttdef"><b>Definition:</b> HTTPClient.h:85</div></div>
+<div class="ttc" id="classHTTPClient_html_a77963622298cf79d9939265d6382945b"><div class="ttname"><a href="classHTTPClient.html#a77963622298cf79d9939265d6382945b">HTTPClient::recv_count</a></div><div class="ttdeci">int recv_count</div><div class="ttdoc">Количество принятых данных в буфере recv_buf.</div><div class="ttdef"><b>Definition:</b> HTTPClient.h:27</div></div>
+<div class="ttc" id="classError_html_a57dd37fd445e3182ed9da6ebfd2a28c0"><div class="ttname"><a href="classError.html#a57dd37fd445e3182ed9da6ebfd2a28c0">Error::what</a></div><div class="ttdeci">const char * what()</div><div class="ttdoc">Возвращает описание ошибки</div><div class="ttdef"><b>Definition:</b> HTTPClient.h:98</div></div>
+<div class="ttc" id="classHTTPClient_html_a9a8a44183458313bc880b67e3fa96bad"><div class="ttname"><a href="classHTTPClient.html#a9a8a44183458313bc880b67e3fa96bad">HTTPClient::server</a></div><div class="ttdeci">string server</div><div class="ttdoc">Адресс сервера</div><div class="ttdef"><b>Definition:</b> HTTPClient.h:28</div></div>
+<div class="ttc" id="classError_html_aa6c7eb4e44e5965476c534c1b3fa1d0e"><div class="ttname"><a href="classError.html#aa6c7eb4e44e5965476c534c1b3fa1d0e">Error::what_str</a></div><div class="ttdeci">string what_str</div><div class="ttdoc">Описание ошибки</div><div class="ttdef"><b>Definition:</b> HTTPClient.h:87</div></div>
+<div class="ttc" id="classHTTPClient_html"><div class="ttname"><a href="classHTTPClient.html">HTTPClient</a></div><div class="ttdoc">Класс для работы cкачивания файла по HTTP метод set_url устанавливает url, метод set_url устанавливае...</div><div class="ttdef"><b>Definition:</b> HTTPClient.h:23</div></div>
+<div class="ttc" id="classHTTPClient_html_a151a9a4e480fee2f964626721b9b819a"><div class="ttname"><a href="classHTTPClient.html#a151a9a4e480fee2f964626721b9b819a">HTTPClient::client_sock</a></div><div class="ttdeci">SOCKET client_sock</div><div class="ttdoc">Дейскриптор сокета</div><div class="ttdef"><b>Definition:</b> HTTPClient.h:31</div></div>
+<div class="ttc" id="classError_html_a66e4b23485049435a2d454f80083f38c"><div class="ttname"><a href="classError.html#a66e4b23485049435a2d454f80083f38c">Error::Error</a></div><div class="ttdeci">Error(const string &amp;what_arg)</div><div class="ttdoc">Создаёт ошибку</div><div class="ttdef"><b>Definition:</b> HTTPClient.h:93</div></div>
+<div class="ttc" id="classHTTPClient_html_a347f62a6a3a8d561838b7f578ace45a5"><div class="ttname"><a href="classHTTPClient.html#a347f62a6a3a8d561838b7f578ace45a5">HTTPClient::path</a></div><div class="ttdeci">string path</div><div class="ttdoc">Путь к файлу на сервере</div><div class="ttdef"><b>Definition:</b> HTTPClient.h:29</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.15
+</small></address>
+</body>
+</html>

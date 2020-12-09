@@ -1,0 +1,368 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>HTTP Client: Класс HTTPClient</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">HTTP Client
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pub-static-methods">Открытые статические члены</a> &#124;
+<a href="#pri-methods">Закрытые члены</a> &#124;
+<a href="#pri-attribs">Закрытые данные</a> &#124;
+<a href="classHTTPClient-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс HTTPClient</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Класс для работы cкачивания файла по HTTP метод set_url устанавливает url, метод set_url устанавливает путь сохранения файла метод request выполняет запрос  
+ <a href="classHTTPClient.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="HTTPClient_8h_source.html">HTTPClient.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a23a15a8f27ac926a86c2ef7bc7bfebcb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHTTPClient.html#a23a15a8f27ac926a86c2ef7bc7bfebcb">HTTPClient</a> ()</td></tr>
+<tr class="memdesc:a23a15a8f27ac926a86c2ef7bc7bfebcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выполняет необходимую инициализацию  <a href="#a23a15a8f27ac926a86c2ef7bc7bfebcb">Подробнее...</a><br /></td></tr>
+<tr class="separator:a23a15a8f27ac926a86c2ef7bc7bfebcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22adef3fa98f8ccbfdaa01b680c89d9f"><td class="memItemLeft" align="right" valign="top"><a id="a22adef3fa98f8ccbfdaa01b680c89d9f"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>get_server</b> ()</td></tr>
+<tr class="separator:a22adef3fa98f8ccbfdaa01b680c89d9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44924003e10829e54f317e5f4c1ae896"><td class="memItemLeft" align="right" valign="top"><a id="a44924003e10829e54f317e5f4c1ae896"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>get_path</b> ()</td></tr>
+<tr class="separator:a44924003e10829e54f317e5f4c1ae896"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0811d512e091c1f00d237ae7cf82c566"><td class="memItemLeft" align="right" valign="top"><a id="a0811d512e091c1f00d237ae7cf82c566"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_server</b> (const string &amp;s)</td></tr>
+<tr class="separator:a0811d512e091c1f00d237ae7cf82c566"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa051b459d73f5e82b6884cc37d7f929b"><td class="memItemLeft" align="right" valign="top"><a id="aa051b459d73f5e82b6884cc37d7f929b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_path</b> (const string &amp;p)</td></tr>
+<tr class="separator:aa051b459d73f5e82b6884cc37d7f929b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5e2edcaacc8fe488fc84b8deea3fb61"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHTTPClient.html#ab5e2edcaacc8fe488fc84b8deea3fb61">set_url</a> (const string &amp;url)</td></tr>
+<tr class="memdesc:ab5e2edcaacc8fe488fc84b8deea3fb61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выполняет валидацию url и заполняет аттрибуты server и path, в случаи если аттребуты server и path не пусты метод работает с относительными адресами  <a href="#ab5e2edcaacc8fe488fc84b8deea3fb61">Подробнее...</a><br /></td></tr>
+<tr class="separator:ab5e2edcaacc8fe488fc84b8deea3fb61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40b352eec8fade25eac9bd56b6e4107d"><td class="memItemLeft" align="right" valign="top"><a id="a40b352eec8fade25eac9bd56b6e4107d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHTTPClient.html#a40b352eec8fade25eac9bd56b6e4107d">set_file</a> (const string &amp;f_path)</td></tr>
+<tr class="memdesc:a40b352eec8fade25eac9bd56b6e4107d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Устанавливает аттрибут file_path. <br /></td></tr>
+<tr class="separator:a40b352eec8fade25eac9bd56b6e4107d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7daca6af4373fb8a40dd5653226d74b8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHTTPClient.html#a7daca6af4373fb8a40dd5653226d74b8">request</a> ()</td></tr>
+<tr class="memdesc:a7daca6af4373fb8a40dd5653226d74b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выполняет HTTP запрос и сохраняет результат в файл  <a href="#a7daca6af4373fb8a40dd5653226d74b8">Подробнее...</a><br /></td></tr>
+<tr class="separator:a7daca6af4373fb8a40dd5653226d74b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Открытые статические члены</h2></td></tr>
+<tr class="memitem:af789bae49b3188e7370c576d228b4f55"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHTTPClient.html#af789bae49b3188e7370c576d228b4f55">parse_headers</a> (const string &amp;head_buf_str, int &amp;http_code, string &amp;loc)</td></tr>
+<tr class="memdesc:af789bae49b3188e7370c576d228b4f55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выполняет разбор заголовков на данный момент поддерживается только заголовок Location.  <a href="#af789bae49b3188e7370c576d228b4f55">Подробнее...</a><br /></td></tr>
+<tr class="separator:af789bae49b3188e7370c576d228b4f55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Закрытые члены</h2></td></tr>
+<tr class="memitem:a470da28450e7a79f87c16e6f24af15c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHTTPClient.html#a470da28450e7a79f87c16e6f24af15c3">connect</a> ()</td></tr>
+<tr class="memdesc:a470da28450e7a79f87c16e6f24af15c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Устанавливает соединение с сервером  <a href="#a470da28450e7a79f87c16e6f24af15c3">Подробнее...</a><br /></td></tr>
+<tr class="separator:a470da28450e7a79f87c16e6f24af15c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b630cb2b3669bd770007f1e526a7c46"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHTTPClient.html#a8b630cb2b3669bd770007f1e526a7c46">save_to_file</a> ()</td></tr>
+<tr class="memdesc:a8b630cb2b3669bd770007f1e526a7c46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Записывает полученные с сервера данные в файл  <a href="#a8b630cb2b3669bd770007f1e526a7c46">Подробнее...</a><br /></td></tr>
+<tr class="separator:a8b630cb2b3669bd770007f1e526a7c46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:a2b2a7590ad11d8dc6c85f22cbf376a47"><td class="memItemLeft" align="right" valign="top"><a id="a2b2a7590ad11d8dc6c85f22cbf376a47"></a>
+char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHTTPClient.html#a2b2a7590ad11d8dc6c85f22cbf376a47">recv_buf</a> [1024 *1024]</td></tr>
+<tr class="memdesc:a2b2a7590ad11d8dc6c85f22cbf376a47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Буфер пиёма данных от сервера <br /></td></tr>
+<tr class="separator:a2b2a7590ad11d8dc6c85f22cbf376a47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77963622298cf79d9939265d6382945b"><td class="memItemLeft" align="right" valign="top"><a id="a77963622298cf79d9939265d6382945b"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHTTPClient.html#a77963622298cf79d9939265d6382945b">recv_count</a></td></tr>
+<tr class="memdesc:a77963622298cf79d9939265d6382945b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Количество принятых данных в буфере recv_buf. <br /></td></tr>
+<tr class="separator:a77963622298cf79d9939265d6382945b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a8a44183458313bc880b67e3fa96bad"><td class="memItemLeft" align="right" valign="top"><a id="a9a8a44183458313bc880b67e3fa96bad"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHTTPClient.html#a9a8a44183458313bc880b67e3fa96bad">server</a></td></tr>
+<tr class="memdesc:a9a8a44183458313bc880b67e3fa96bad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Адресс сервера <br /></td></tr>
+<tr class="separator:a9a8a44183458313bc880b67e3fa96bad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a347f62a6a3a8d561838b7f578ace45a5"><td class="memItemLeft" align="right" valign="top"><a id="a347f62a6a3a8d561838b7f578ace45a5"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHTTPClient.html#a347f62a6a3a8d561838b7f578ace45a5">path</a></td></tr>
+<tr class="memdesc:a347f62a6a3a8d561838b7f578ace45a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Путь к файлу на сервере <br /></td></tr>
+<tr class="separator:a347f62a6a3a8d561838b7f578ace45a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a573fb05f32d90d0ac0a7bac352ecae92"><td class="memItemLeft" align="right" valign="top"><a id="a573fb05f32d90d0ac0a7bac352ecae92"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHTTPClient.html#a573fb05f32d90d0ac0a7bac352ecae92">file_path</a></td></tr>
+<tr class="memdesc:a573fb05f32d90d0ac0a7bac352ecae92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Путь по которому будет сохранён файл <br /></td></tr>
+<tr class="separator:a573fb05f32d90d0ac0a7bac352ecae92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a151a9a4e480fee2f964626721b9b819a"><td class="memItemLeft" align="right" valign="top"><a id="a151a9a4e480fee2f964626721b9b819a"></a>
+SOCKET&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHTTPClient.html#a151a9a4e480fee2f964626721b9b819a">client_sock</a></td></tr>
+<tr class="memdesc:a151a9a4e480fee2f964626721b9b819a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Дейскриптор сокета <br /></td></tr>
+<tr class="separator:a151a9a4e480fee2f964626721b9b819a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Класс для работы cкачивания файла по HTTP метод set_url устанавливает url, метод set_url устанавливает путь сохранения файла метод request выполняет запрос </p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a id="a23a15a8f27ac926a86c2ef7bc7bfebcb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23a15a8f27ac926a86c2ef7bc7bfebcb">&#9670;&nbsp;</a></span>HTTPClient()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HTTPClient::HTTPClient </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Выполняет необходимую инициализацию </p>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classError.html" title="Класс для обработки ошибок">Error</a></td><td>в случае ошибки </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="a470da28450e7a79f87c16e6f24af15c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a470da28450e7a79f87c16e6f24af15c3">&#9670;&nbsp;</a></span>connect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HTTPClient::connect </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Устанавливает соединение с сервером </p>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classError.html" title="Класс для обработки ошибок">Error</a></td><td>в случае ошибки </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af789bae49b3188e7370c576d228b4f55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af789bae49b3188e7370c576d228b4f55">&#9670;&nbsp;</a></span>parse_headers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int HTTPClient::parse_headers </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>head_buf_str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>http_code</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>loc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Выполняет разбор заголовков на данный момент поддерживается только заголовок Location. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">head_buf_str</td><td>строка с данными полученная с сервера, часть этих данных HTTP-заголовки </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">http_code</td><td>http код ответа </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">loc</td><td>значение заголовка Location </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>размер заголовков в байтах </dd></dl>
+
+</div>
+</div>
+<a id="a7daca6af4373fb8a40dd5653226d74b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7daca6af4373fb8a40dd5653226d74b8">&#9670;&nbsp;</a></span>request()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int HTTPClient::request </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Выполняет HTTP запрос и сохраняет результат в файл </p>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classError.html" title="Класс для обработки ошибок">Error</a></td><td>в случае ошибки </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8b630cb2b3669bd770007f1e526a7c46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b630cb2b3669bd770007f1e526a7c46">&#9670;&nbsp;</a></span>save_to_file()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HTTPClient::save_to_file </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Записывает полученные с сервера данные в файл </p>
+<p>Записывает recv_count байт recv_buf в файл file_path, затем получает из сокета в recv_buf следующию порцию данных, цикл повторяется пока на сокете не закончутся данные </p><dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classError.html" title="Класс для обработки ошибок">Error</a></td><td>в случае ошибки </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab5e2edcaacc8fe488fc84b8deea3fb61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5e2edcaacc8fe488fc84b8deea3fb61">&#9670;&nbsp;</a></span>set_url()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HTTPClient::set_url </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>url</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Выполняет валидацию url и заполняет аттрибуты server и path, в случаи если аттребуты server и path не пусты метод работает с относительными адресами </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">url</td><td>URL адрес файла который требуется загрузить </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classError.html" title="Класс для обработки ошибок">Error</a></td><td>в случае ошибки </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>http_client/<a class="el" href="HTTPClient_8h_source.html">HTTPClient.h</a></li>
+<li>http_client/HTTPClient.cpp</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.15
+</small></address>
+</body>
+</html>

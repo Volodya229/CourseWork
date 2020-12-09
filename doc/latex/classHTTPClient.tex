@@ -1,0 +1,185 @@
+\hypertarget{classHTTPClient}{}\section{Класс H\+T\+T\+P\+Client}
+\label{classHTTPClient}\index{HTTPClient@{HTTPClient}}
+
+
+Класс для работы cкачивания файла по H\+T\+TP метод set\+\_\+url устанавливает url, метод set\+\_\+url устанавливает путь сохранения файла метод request выполняет запрос  
+
+
+
+
+{\ttfamily \#include $<$H\+T\+T\+P\+Client.\+h$>$}
+
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classHTTPClient_a23a15a8f27ac926a86c2ef7bc7bfebcb}{H\+T\+T\+P\+Client}} ()
+\begin{DoxyCompactList}\small\item\em Выполняет необходимую инициализацию \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classHTTPClient_a22adef3fa98f8ccbfdaa01b680c89d9f}\label{classHTTPClient_a22adef3fa98f8ccbfdaa01b680c89d9f}} 
+string {\bfseries get\+\_\+server} ()
+\item 
+\mbox{\Hypertarget{classHTTPClient_a44924003e10829e54f317e5f4c1ae896}\label{classHTTPClient_a44924003e10829e54f317e5f4c1ae896}} 
+string {\bfseries get\+\_\+path} ()
+\item 
+\mbox{\Hypertarget{classHTTPClient_a0811d512e091c1f00d237ae7cf82c566}\label{classHTTPClient_a0811d512e091c1f00d237ae7cf82c566}} 
+void {\bfseries set\+\_\+server} (const string \&s)
+\item 
+\mbox{\Hypertarget{classHTTPClient_aa051b459d73f5e82b6884cc37d7f929b}\label{classHTTPClient_aa051b459d73f5e82b6884cc37d7f929b}} 
+void {\bfseries set\+\_\+path} (const string \&p)
+\item 
+void \mbox{\hyperlink{classHTTPClient_ab5e2edcaacc8fe488fc84b8deea3fb61}{set\+\_\+url}} (const string \&url)
+\begin{DoxyCompactList}\small\item\em Выполняет валидацию url и заполняет аттрибуты server и path, в случаи если аттребуты server и path не пусты метод работает с относительными адресами \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classHTTPClient_a40b352eec8fade25eac9bd56b6e4107d}\label{classHTTPClient_a40b352eec8fade25eac9bd56b6e4107d}} 
+void \mbox{\hyperlink{classHTTPClient_a40b352eec8fade25eac9bd56b6e4107d}{set\+\_\+file}} (const string \&f\+\_\+path)
+\begin{DoxyCompactList}\small\item\em Устанавливает аттрибут file\+\_\+path. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classHTTPClient_a7daca6af4373fb8a40dd5653226d74b8}{request}} ()
+\begin{DoxyCompactList}\small\item\em Выполняет H\+T\+TP запрос и сохраняет результат в файл \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Открытые статические члены}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{classHTTPClient_af789bae49b3188e7370c576d228b4f55}{parse\+\_\+headers}} (const string \&head\+\_\+buf\+\_\+str, int \&http\+\_\+code, string \&loc)
+\begin{DoxyCompactList}\small\item\em Выполняет разбор заголовков на данный момент поддерживается только заголовок Location. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Закрытые члены}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classHTTPClient_a470da28450e7a79f87c16e6f24af15c3}{connect}} ()
+\begin{DoxyCompactList}\small\item\em Устанавливает соединение с сервером \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classHTTPClient_a8b630cb2b3669bd770007f1e526a7c46}{save\+\_\+to\+\_\+file}} ()
+\begin{DoxyCompactList}\small\item\em Записывает полученные с сервера данные в файл \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classHTTPClient_a2b2a7590ad11d8dc6c85f22cbf376a47}\label{classHTTPClient_a2b2a7590ad11d8dc6c85f22cbf376a47}} 
+char \mbox{\hyperlink{classHTTPClient_a2b2a7590ad11d8dc6c85f22cbf376a47}{recv\+\_\+buf}} \mbox{[}1024 $\ast$1024\mbox{]}
+\begin{DoxyCompactList}\small\item\em Буфер пиёма данных от сервера \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classHTTPClient_a77963622298cf79d9939265d6382945b}\label{classHTTPClient_a77963622298cf79d9939265d6382945b}} 
+int \mbox{\hyperlink{classHTTPClient_a77963622298cf79d9939265d6382945b}{recv\+\_\+count}}
+\begin{DoxyCompactList}\small\item\em Количество принятых данных в буфере recv\+\_\+buf. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classHTTPClient_a9a8a44183458313bc880b67e3fa96bad}\label{classHTTPClient_a9a8a44183458313bc880b67e3fa96bad}} 
+string \mbox{\hyperlink{classHTTPClient_a9a8a44183458313bc880b67e3fa96bad}{server}}
+\begin{DoxyCompactList}\small\item\em Адресс сервера \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classHTTPClient_a347f62a6a3a8d561838b7f578ace45a5}\label{classHTTPClient_a347f62a6a3a8d561838b7f578ace45a5}} 
+string \mbox{\hyperlink{classHTTPClient_a347f62a6a3a8d561838b7f578ace45a5}{path}}
+\begin{DoxyCompactList}\small\item\em Путь к файлу на сервере \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classHTTPClient_a573fb05f32d90d0ac0a7bac352ecae92}\label{classHTTPClient_a573fb05f32d90d0ac0a7bac352ecae92}} 
+string \mbox{\hyperlink{classHTTPClient_a573fb05f32d90d0ac0a7bac352ecae92}{file\+\_\+path}}
+\begin{DoxyCompactList}\small\item\em Путь по которому будет сохранён файл \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classHTTPClient_a151a9a4e480fee2f964626721b9b819a}\label{classHTTPClient_a151a9a4e480fee2f964626721b9b819a}} 
+S\+O\+C\+K\+ET \mbox{\hyperlink{classHTTPClient_a151a9a4e480fee2f964626721b9b819a}{client\+\_\+sock}}
+\begin{DoxyCompactList}\small\item\em Дейскриптор сокета \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+Класс для работы cкачивания файла по H\+T\+TP метод set\+\_\+url устанавливает url, метод set\+\_\+url устанавливает путь сохранения файла метод request выполняет запрос 
+
+\subsection{Конструктор(ы)}
+\mbox{\Hypertarget{classHTTPClient_a23a15a8f27ac926a86c2ef7bc7bfebcb}\label{classHTTPClient_a23a15a8f27ac926a86c2ef7bc7bfebcb}} 
+\index{HTTPClient@{HTTPClient}!HTTPClient@{HTTPClient}}
+\index{HTTPClient@{HTTPClient}!HTTPClient@{HTTPClient}}
+\subsubsection{\texorpdfstring{HTTPClient()}{HTTPClient()}}
+{\footnotesize\ttfamily H\+T\+T\+P\+Client\+::\+H\+T\+T\+P\+Client (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Выполняет необходимую инициализацию 
+
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classError}{Error}}} & в случае ошибки \\
+\hline
+\end{DoxyExceptions}
+
+
+\subsection{Методы}
+\mbox{\Hypertarget{classHTTPClient_a470da28450e7a79f87c16e6f24af15c3}\label{classHTTPClient_a470da28450e7a79f87c16e6f24af15c3}} 
+\index{HTTPClient@{HTTPClient}!connect@{connect}}
+\index{connect@{connect}!HTTPClient@{HTTPClient}}
+\subsubsection{\texorpdfstring{connect()}{connect()}}
+{\footnotesize\ttfamily void H\+T\+T\+P\+Client\+::connect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Устанавливает соединение с сервером 
+
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classError}{Error}}} & в случае ошибки \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classHTTPClient_af789bae49b3188e7370c576d228b4f55}\label{classHTTPClient_af789bae49b3188e7370c576d228b4f55}} 
+\index{HTTPClient@{HTTPClient}!parse\_headers@{parse\_headers}}
+\index{parse\_headers@{parse\_headers}!HTTPClient@{HTTPClient}}
+\subsubsection{\texorpdfstring{parse\_headers()}{parse\_headers()}}
+{\footnotesize\ttfamily int H\+T\+T\+P\+Client\+::parse\+\_\+headers (\begin{DoxyParamCaption}\item[{const string \&}]{head\+\_\+buf\+\_\+str,  }\item[{int \&}]{http\+\_\+code,  }\item[{string \&}]{loc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Выполняет разбор заголовков на данный момент поддерживается только заголовок Location. 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em head\+\_\+buf\+\_\+str} & строка с данными полученная с сервера, часть этих данных H\+T\+T\+P-\/заголовки \\
+\hline
+\mbox{\texttt{ out}}  & {\em http\+\_\+code} & http код ответа \\
+\hline
+\mbox{\texttt{ out}}  & {\em loc} & значение заголовка Location \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+размер заголовков в байтах 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classHTTPClient_a7daca6af4373fb8a40dd5653226d74b8}\label{classHTTPClient_a7daca6af4373fb8a40dd5653226d74b8}} 
+\index{HTTPClient@{HTTPClient}!request@{request}}
+\index{request@{request}!HTTPClient@{HTTPClient}}
+\subsubsection{\texorpdfstring{request()}{request()}}
+{\footnotesize\ttfamily int H\+T\+T\+P\+Client\+::request (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Выполняет H\+T\+TP запрос и сохраняет результат в файл 
+
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classError}{Error}}} & в случае ошибки \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classHTTPClient_a8b630cb2b3669bd770007f1e526a7c46}\label{classHTTPClient_a8b630cb2b3669bd770007f1e526a7c46}} 
+\index{HTTPClient@{HTTPClient}!save\_to\_file@{save\_to\_file}}
+\index{save\_to\_file@{save\_to\_file}!HTTPClient@{HTTPClient}}
+\subsubsection{\texorpdfstring{save\_to\_file()}{save\_to\_file()}}
+{\footnotesize\ttfamily void H\+T\+T\+P\+Client\+::save\+\_\+to\+\_\+file (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Записывает полученные с сервера данные в файл 
+
+Записывает recv\+\_\+count байт recv\+\_\+buf в файл file\+\_\+path, затем получает из сокета в recv\+\_\+buf следующию порцию данных, цикл повторяется пока на сокете не закончутся данные 
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classError}{Error}}} & в случае ошибки \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classHTTPClient_ab5e2edcaacc8fe488fc84b8deea3fb61}\label{classHTTPClient_ab5e2edcaacc8fe488fc84b8deea3fb61}} 
+\index{HTTPClient@{HTTPClient}!set\_url@{set\_url}}
+\index{set\_url@{set\_url}!HTTPClient@{HTTPClient}}
+\subsubsection{\texorpdfstring{set\_url()}{set\_url()}}
+{\footnotesize\ttfamily void H\+T\+T\+P\+Client\+::set\+\_\+url (\begin{DoxyParamCaption}\item[{const string \&}]{url }\end{DoxyParamCaption})}
+
+
+
+Выполняет валидацию url и заполняет аттрибуты server и path, в случаи если аттребуты server и path не пусты метод работает с относительными адресами 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em url} & U\+RL адрес файла который требуется загрузить \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classError}{Error}}} & в случае ошибки \\
+\hline
+\end{DoxyExceptions}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+http\+\_\+client/\mbox{\hyperlink{HTTPClient_8h}{H\+T\+T\+P\+Client.\+h}}\item 
+http\+\_\+client/H\+T\+T\+P\+Client.\+cpp\end{DoxyCompactItemize}
